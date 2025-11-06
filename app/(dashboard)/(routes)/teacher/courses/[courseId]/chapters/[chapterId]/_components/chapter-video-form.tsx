@@ -41,7 +41,7 @@ export const ChapterVideoForm = ({
       //router.refresh();
       const baseUrl = process.env.NEXT_PUBLIC_APP_URL;
       const url = `${baseUrl}/teacher/courses/${courseId}/chapters/${chapterId}`;
-      window.location.assign(url);
+      // window.location.assign(url);
 
     } catch {
       toast.error("Something went wrong");
