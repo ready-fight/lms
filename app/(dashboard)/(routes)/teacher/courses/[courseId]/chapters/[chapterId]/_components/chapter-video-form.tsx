@@ -39,9 +39,9 @@ export const ChapterVideoForm = ({
       toast.success("Chapter updated");
       toggleEdit();
       const baseUrl = process.env.NEXT_PUBLIC_APP_URL;
-      // const url = `${baseUrl}/teacher/courses/${courseId}/chapters/${chapterId}`;
-      // window.location.assign(url);
-      router.refresh();
+      const url = `${baseUrl}/teacher/courses/${courseId}/chapters/${chapterId}`;
+      window.location.assign(url);
+      // router.refresh();
 
     } catch {
       toast.error("Something went wrong");
