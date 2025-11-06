@@ -1,9 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images:
-    {
-        domains: ['utfs.io', 'img.clerk.com']
+    images: {
+      domains: ['utfs.io', 'img.clerk.com'],
     },
-}
-
-module.exports = nextConfig
+    experimental: {
+      reactCompiler: false,
+    },
+    output: 'standalone',
+    reactStrictMode: true,
+  };
+  
+  module.exports = nextConfig;
+  
